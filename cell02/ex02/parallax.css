@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+.parallax{
+    background-image: url("https://cdn.discordapp.com/attachments/884333461530374155/1030323825805639740/same_location_photos_at_different_points_time_29_copy.jpeg");
+    /* min-height: 1000px;  */
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax2{
+    background-image: url("https://media.discordapp.net/attachments/884333461530374155/1030323825507827762/same_location_photos_at_different_points_time_29.jpeg?width=568&height=686");
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.black-box{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    display: block;
+    
+}
+.black-box span{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 50px;
+}
+.centered-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+}
