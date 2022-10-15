@@ -1,0 +1,8 @@
+body{
+    justify-content: center;
+    display: flex;
+}
+#btn{
+    
+    padding: 10px 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .container{
+           
+            display: flex;
+        }
+        .operations button{
+            margin: 5px
+        }
+        .submit{
+            display: block;
+            margin: 20px;
+        }
+        #submit{
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        submitted = () =>{ 
+            left = parseInt(document.getElementById("left-member").value)
+            right = parseInt(document.getElementById("right-member").value)
+            if(left < 0 || right <0 || !left || !right){
+                alert("Error :(")
+                return
+            }            
+            method = document.getElementById("operation").value
+            if(method == "plus"){
+                res = left + right
+            }else if(method == "minus"){
+                res = left - right
+            }else if(method == "multiply"){
+                res = left * right
+            }else if(method == "divide"){
+                if()
+                res = left / right
+            }else if(method == "mod"){
+                res = left % right
+            }
+            alert(res)
+            console.log(res)
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="left-member" id="left-member">
+        <div class="operations">
+            <select id="operation">
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+                <option value="mod">%</option>
+              </select>
+        </div>
+        <input type="text" name="right-member" id="right-member">
+        <button id="submit" onclick="submitted()">Try me!</button>
+    </div>
+    <div class="submit">
+        
+    </div>
+</body>
+</html>

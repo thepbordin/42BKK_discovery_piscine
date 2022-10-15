@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Balloon</title>
+    <style>
+        .balloon{
+            width: 200px;
+            height: 200px;
+            
+            border-radius: 50%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script type="text/javascript">
+        blowBalloon = (e) => {
+            var balloonHeight = e.offsetHeight;
+            var bgColor = e.style.backgroundColor;
+            if(balloonHeight+10 > 420){
+                e.style.height = 200 + "px";
+                e.style.width = 200 + "px";
+                
+            }else{
+                e.style.height = balloonHeight+10 + "px";
+                e.style.width = balloonHeight+10 + "px";
+            }
+            
+            if (bgColor == 'red'){
+                e.style.backgroundColor = "green"
+            }else if(bgColor == 'green'){
+                e.style.backgroundColor = "blue"
+            }else if(bgColor == 'blue'){
+                e.style.backgroundColor = "red"
+            }
+            
+        }
+        BalloonLeave = (e) => {
+            var bgColor = e.style.backgroundColor;
+            var balloonHeight = e.offsetHeight;
+
+            if(balloonHeight-5 >= 200){
+                e.style.height = balloonHeight-5 + "px";
+                e.style.width = balloonHeight-5 + "px";
+                
+            }
+
+            if (bgColor == 'red'){
+                e.style.backgroundColor = "blue"
+            }else if(bgColor == 'green'){
+                e.style.backgroundColor = "red"
+            }else if(bgColor == 'blue'){
+                e.style.backgroundColor = "green"
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    <div class="balloon" style="background-color: red;" onclick="blowBalloon(this)" onmouseleave="BalloonLeave(this)"></div>
+    
+</body>
+</html>
