@@ -13,6 +13,7 @@
     --huge-font-size: 4rem;
     
 }
+
 ::-webkit-scrollbar
     {
       width: 12px;  /* for vertical scrollbars */
@@ -36,9 +37,11 @@ a{
     text-decoration: none;
     color: rgb(240, 242, 244);
 }
-a,h1,h2,h3,h4,h5,h6,p{
-    font-family: Pridi;
+a,h1,h2,h3,h4,h5,h6,p, span{
+    font-family: Poppins, sans-serif;
     color: rgb(240, 242, 244);
+    cursor: default;
+
 }
 .white{
     color: white;
@@ -68,6 +71,20 @@ a,h1,h2,h3,h4,h5,h6,p{
     100%{
         transform: translateY(0);
     }
+}
+@keyframes water-drop{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+.arrow-circle-a{
+    position: absolute;
 }
 .arrow-circle i{
     animation: arrowBounce 1s ease-in-out infinite;
@@ -99,6 +116,7 @@ a,h1,h2,h3,h4,h5,h6,p{
     width: 70%;
 
 }
+/* <<----  Contact ---->> */
 .contact-list{
     bottom: 15%;
     right: 10%;
@@ -131,7 +149,10 @@ a,h1,h2,h3,h4,h5,h6,p{
     transform: scale(105%);
     cursor: pointer;
     transform: translateY(-5px);
+    color: #efefef;
 }
+
+/* <<----  Contact ---->> */
 
 .intro h1{
     font-size: var(--huge-font-size);
@@ -153,7 +174,8 @@ a,h1,h2,h3,h4,h5,h6,p{
     font-size: var(--large-font-size);
     color: var(--gray-color);
     width: 100%;
-
+    font-family: 'poppins';
+    
 }
 
 
@@ -191,27 +213,99 @@ svg{
     font-family: 'exo 2';
     color: var(--con-color);
     font-weight: 600;
+    font-size: var(--huge-font-size);
 }
 
 
 
 /* <<----  About Me Page ---->> */
 .about-me { 
-    background-image: url(/svg/wave.svg);
+    background-image: url(/svg/wave3.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 100vh;
-    padding: 10% 10% 10% 10%;
+    height:100vh;
+    padding: 5% 10% 10% 10%;
     /* background-color: var(--secondary-color); */
 }
 .about-me h1{
     font-family: 'Poppins';
     font-weight: 600;
+    font-style: italic;
 }
 .about-me p{
     font-size: var(--normal-font-size);
-    max-width: 50%;
+    width: 50%;
     font-family: 'Poppins';
 }
+.code-block{
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--con-text-color);
+    width: 30%;
+    font-family: 'poppins';
+    font-size: var(--small-font-size);
+    color: var(--con-text-color);
+}
+.code-block .self{
+    color: #39BAE6;
+    font-style: italic;
+}
+.code-block .period{
+    color: #BFBDB6;
+
+}
+.code-block .str{
+    color: #AAD94C;
+}
+/* <<----  About Me Page ---->> */
+
+/* <<----  Skills Page ---->> */
+
+.skills{
+    background-color: var(--con-color);
+    height: 100vh;
+    transform: translateY(-14rem);
+    padding: 0% 10% 10% 10%;
+}
+.skill-icons{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 130px;
+    padding: 0;
+}
+
+.skill-icons li i{
+    font-size: 2rem;
+    transition: 0.25s;
+    color: white;
+    margin: 5px;
+}
+
+.skill-icons li i:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    /* transform: translateY(-5px); */
+    color: #efefef;
+}
+.skillbar-container{
+    position: absolute;
+    margin-left: 50px;
+    background-color: #fff;
+    width: 110px;
+    height: 10px;
+    border-radius: 10px;
+}
+.skillbar{
+    /* background-color: #fff;
+    width: 20%;
+    height: 20px; */
+}
+/* <<----   Skills Page ---->> */

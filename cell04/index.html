@@ -38,23 +38,21 @@
           <div class="intro-line"></div>
           <h1 style="font-style: italic;">Hi,</h1>
           <h1>I'm <span>Thepbordin</span></h1>
-          <h2>A High School Student</h2>
+          <h2>sleep, learn, code.</h2>
           
         </div>
           
-          <svg id="visual" viewBox="0 0 900 600" width="1200" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <svg id="visual" viewBox="0 0 900 600" width="1100" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <g transform="translate(474.5902159754186 246.69931515807184)">
                 <path class="portrait-glyph" d="M112.9 -96C155 -70.7 204 -35.4 210.6 6.6C217.2 48.6 181.4 97.1 139.3 145.3C97.1 193.4 48.6 241.2 -11.1 252.3C-70.7 263.4 -141.4 237.8 -190.9 189.6C-240.4 141.4 -268.7 70.7 -258.5 10.3C-248.2 -50.2 -199.4 -100.4 -149.9 -125.7C-100.4 -151.1 -50.2 -151.5 -7.4 -144.1C35.4 -136.7 70.7 -121.4 112.9 -96" fill="#0660E4"></path>
             </g>
             <g transform="translate(426.36221418526696 301.55557345437853)">
                 <path class="portrait-glyph" d="M137.3 -135.3C183.1 -91.5 229.1 -45.7 225.4 -3.7C221.8 38.4 168.5 76.8 122.7 116.8C76.8 156.8 38.4 198.4 -16.1 214.6C-70.7 230.7 -141.4 221.4 -166.4 181.4C-191.4 141.4 -170.7 70.7 -162.1 8.6C-153.5 -53.5 -157 -107 -132 -150.8C-107 -194.7 -53.5 -228.8 -3.9 -224.9C45.7 -221.1 91.5 -179.1 137.3 -135.3" fill="#fff"></path>
             </g>
-            <!-- <img class="portrait-img" src="img/Subject.png" alt=""> -->
           </svg>
-        
-        <div class="arrow-circle" onclick="smoothScroll('aboutmepage')">
+        <a href="#about" class="arrow-circle">
           <i class="fa-solid fa-arrow-down white"></i>
-        </div>
+        </a>
         
       </div>
       <div class="contact-list">
@@ -66,12 +64,37 @@
         </ul>
       </div>
     </div>
-    <div class="about-me" id="aboutmepage">
+    <div class="about-me" id="about">
       <h1><span class="title-prefix">/ </span>About Me</h1>
       <p>I'm a high school student who spends a lot of time on projects that teach me about coding and web development.</p>
+
+      <div class="code-block">
+        <span class="self">self</span><span class="period">.realname</span> <span style="color: #C97E59;">=</span> <span class="str">"Thepbordin Jaiinsom"</span> <br>
+        <span class="self">self</span><span class="period">.nickname</span> <span style="color: #C97E59;">=</span> <span class="str">"Fu"</span> <br>
+        <span class="self">self</span><span class="period">.age</span> <span style="color: #C97E59;">=</span> <span style="color: #D2A6FF;">17</span> <br>
+        <span class="self">self</span><span class="period">.address</span> <span style="color: #C97E59;">=</span> <span class="str">"Chiang Mai, Thailand"</span> <br>
+        
+      </div>
     </div>
+
+    <div class="skills" id="skill">
+      <h1><span class="title-prefix" style="color: #fff" id="about">/ </span>Skills</h1>
+      <!-- <p>I'm a high school student who spends a lot of time on projects that teach me about coding and web development.</p> -->
+      <ul class="skill-icons">
+        <li><i class="fa-brands fa-python"></i>
+          <span>Python</span>
+            <div class="skillbar-container">
+              <div class="skillbar python"></div>
+            </div>
+        </li>
+        <li><i class="fa-brands fa-github"></i></li>
+        <li><i class="fa-brands fa-discord"></i></li>
+      </ul>
+    </div>
+
+
   <script src="js/main.js"></script>
   <script src="js/navbar.js"></script>
-  <!-- <script src="js/typewriter.js"></script> -->
+  
 </body> 
 </html>
