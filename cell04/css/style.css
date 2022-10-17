@@ -97,11 +97,11 @@ a,h1,h2,h3,h4,h5,h6,p, span{
 .big-image-container{
     background-color: var(--primary-color);
     height: 100vh;
-    position: relative;
+    /* position: relative; */
 }
 .big-image{
     padding: 50px 10% 10% 10%;
-    position: relative; 
+    /* position: relative;  */
     height: 100vh;
     background-color: var(--primary-color);
 }
@@ -220,16 +220,16 @@ svg{
 
 /* <<----  About Me Page ---->> */
 .about-me { 
-    background-image: url(/svg/wave3.svg);
-    background-position: center;
+    background-image: url(/svg/wave4.svg);
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 
+
     height:100vh;
     padding: 5% 10% 10% 10%;
-    /* background-color: var(--secondary-color); */
 }
-.about-me h1{
+.title-h1{
     font-family: 'Poppins';
     font-weight: 600;
     font-style: italic;
@@ -245,7 +245,7 @@ svg{
     margin: 20px;
     border-radius: 10px;
     border-left: 5px solid var(--con-text-color);
-    width: 30%;
+    width: 40%;
     font-family: 'poppins';
     font-size: var(--small-font-size);
     color: var(--con-text-color);
@@ -266,9 +266,12 @@ svg{
 /* <<----  Skills Page ---->> */
 
 .skills{
+    
     background-color: var(--con-color);
-    height: 100vh;
-    transform: translateY(-14rem);
+    /* background-image: url('https://cdn.gamingdose.com/wp-content/uploads/2022/03/rickroll.png'); */
+    min-height: 25vh;
+    /* position: fixed; */
+    transform: translateY(-10rem);
     padding: 0% 10% 10% 10%;
 }
 .skill-icons{
@@ -281,14 +284,22 @@ svg{
     width: 130px;
     padding: 0;
 }
+.skill-icons p{
+    font-size: var(--normal-font-size);
+}
 
 .skill-icons li i{
     font-size: 2rem;
     transition: 0.25s;
     color: white;
-    margin: 5px;
+    margin: 2.5rem 0 0 0;
 }
 
+.skill-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
 .skill-icons li i:hover{
     transform: scale(105%);
     cursor: pointer;
@@ -296,16 +307,161 @@ svg{
     color: #efefef;
 }
 .skillbar-container{
-    position: absolute;
-    margin-left: 50px;
-    background-color: #fff;
-    width: 110px;
+    position: relative;
+    /* margin-left: 50px; */
+    background-color: rgb(141, 141, 141);
+    width: 200px;
     height: 10px;
     border-radius: 10px;
+    margin:5px 0 0 0;
 }
 .skillbar{
-    /* background-color: #fff;
-    width: 20%;
-    height: 20px; */
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 0%;
+    height: 10px;
+}
+.python {
+    width: 100%;
+}
+.html {
+    width: 50%;
+}
+.css {
+    width: 50%;
+}
+.skill-container{
+    display: flex;
+}
+.competition{
+    margin: 10% 0 0 0;
+}
+.comp-card{
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    width: auto;
+    height: 450px;
+    text-align: center;
+    
+}
+.comp-card h2{
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: italic;
+    font-size: var(--large-font-size);
+    color: var(--primary-color);
+}
+
+.icon-circle{
+    /* position: absolute; */
+    /* left: 50%; */
+    margin: 20px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--con-color);
+    color: white;
+    font-size: 1.5rem;
+}
+.icon-circle:hover{
+    transform: scale(105%) rotate(10deg);
+    transition: all 0.25s;
+}
+.comp-card h3 {
+    color: var(--secondary-color);
+    font-size: var(--normal-font-size);
+}
+.comp-card img{
+    
+    display: block;
+    max-width: 350px;
+    min-height: 240px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.comp-card a {
+    color: var(--con-text-color);
+    font-size: var(--normal-font-size);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.comp-card a:hover{
+    color: var(--con-color);
+}
+.comp-list{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow: auto;
+
+}
+.comp-list::-webkit-scrollbar{
+    /* display: none; */
+    width: 0;
+}
+.more-info{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 2.0rem;
+    border-radius: 50%;
+    background-color: var(--con-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    transform: rotate(-90deg);
+    
 }
 /* <<----   Skills Page ---->> */
+
+/* <<----   Contact Me Page ---->> */
+
+.contact {
+    background-color: var(--primary-color);
+    height: 10vh;
+    /* position: fixed; */
+    /* transform: translateY(-10rem); */
+    padding: 0% 10% 10% 10%;
+    margin-bottom: 10%;
+}
+.contact i{
+    color: white;
+    font-size: 1.5rem;
+}
+.contact .email{
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-family: 'Poppins';
+    margin-left: 10px;
+}
+.contact .email:hover{
+    color: var(--con-text-color);
+    transition: 0.25s;
+}
+/* <<----   Contact Me Page ---->> */
+/* Responsive */
+@media (max-width: 991px) {
+    .about-me p{
+        width: 100%;
+    }
+    .code-block{
+        width: 100%;
+    }
+}
+/* Responsive */
